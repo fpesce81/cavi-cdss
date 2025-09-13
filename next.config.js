@@ -33,6 +33,15 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: "/favicon.ico",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
         source: "/models/:path*",
         headers: [
           {
@@ -50,7 +59,8 @@ const nextConfig = {
         ],
       },
       {
-        source: "/:path*",
+        source:
+          "/((?!favicon.ico|.*\\.ico|.*\\.png|.*\\.jpg|.*\\.jpeg|.*\\.gif|.*\\.svg|.*\\.css|.*\\.js|.*\\.wasm|.*\\.mjs).*)",
         headers: [
           {
             key: "Cross-Origin-Embedder-Policy",
