@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "CAVI CDSS - Cardiovascular Risk Calculator",
   description: "Clinical Decision Support System for cardiovascular risk assessment",
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: '/icon',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({

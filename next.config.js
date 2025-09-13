@@ -37,6 +37,7 @@ const nextConfig = {
       { source: "/favicon-32x32.png", destination: "/icon" },
       { source: "/favicon-16x16.png", destination: "/icon" },
       { source: "/manifest.json", destination: "/manifest.webmanifest" },
+      { source: "/site.webmanifest", destination: "/manifest.webmanifest" },
     ];
   },
   async headers() {
