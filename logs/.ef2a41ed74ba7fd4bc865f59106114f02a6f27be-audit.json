@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/admin/Desktop/cavi_pytorch/cavi-cdss/logs/.ef2a41ed74ba7fd4bc865f59106114f02a6f27be-audit.json",
+    "files": [
+        {
+            "date": 1757741724670,
+            "name": "/Users/admin/Desktop/cavi_pytorch/cavi-cdss/logs/mcp-puppeteer-2025-09-13.log",
+            "hash": "697907cdd883bd457a1c3717a9ba74b5e4fdd12e8d8257e58e40d8b9edce07c7"
+        }
+    ],
+    "hashType": "sha256"
+}

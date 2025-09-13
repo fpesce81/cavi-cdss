@@ -1,0 +1,42 @@
+{
+  "binary_features": [
+    "age",
+    "sex",
+    "cavi_mean",
+    "abi_mean",
+    "Hct",
+    "cavi_age_interaction",
+    "cavi_sex_interaction",
+    "cavi_normal",
+    "cavi_elevated",
+    "cavi_age_adjusted"
+  ],
+  "survival_features": [
+    "age",
+    "sex",
+    "cavi_mean",
+    "abi_mean",
+    "Hct",
+    "cavi_age_interaction",
+    "cavi_sex_interaction",
+    "cavi_normal",
+    "cavi_elevated",
+    "cavi_age_adjusted"
+  ],
+  "feature_descriptions": {
+    "age": "Patient age in years",
+    "sex": "Patient sex (1=Male, 0=Female)",
+    "cavi_mean": "Cardio-Ankle Vascular Index mean value",
+    "abi_mean": "Ankle-Brachial Index mean value",
+    "Hct": "Hematocrit (%)",
+    "cavi_age_interaction": "CAVI \u00d7 Age interaction term",
+    "cavi_sex_interaction": "CAVI \u00d7 Sex interaction term",
+    "cavi_normal": "Normal CAVI category (8-10)",
+    "cavi_elevated": "Elevated CAVI category (>10)",
+    "cavi_age_adjusted": "Age-adjusted CAVI value"
+  },
+  "model_performance": {
+    "binary_auc": 0.907,
+    "survival_c_index": 0.6892
+  }
+}
